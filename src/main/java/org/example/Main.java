@@ -57,6 +57,7 @@ public class Main {
         System.out.print("in_oder:  ");
        print(tree.traverse(TreeTraversal.IN_ORDER));
     }
+    tree = TreeBalancer.balanceTree(tree);
 
     public static void print(List<Integer> list) {
         list.forEach((element) -> System.out.print(element+","));
